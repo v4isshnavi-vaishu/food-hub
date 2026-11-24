@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fffaf2;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #35180f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+}
+
+.navbar h1 {
+    color: #ffbd59;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    color: #ffbd59;
+}
+
+/* Hero Section */
+.hero {
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1400");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff9f1c;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #e67e00;
+}
+
+/* Menu Section */
+.menu {
+    padding: 60px 7%;
+    text-align: center;
+}
+
+.menu h2,
+.offers h2,
+.reviews h2,
+.contact h2 {
+    font-size: 32px;
+    color: #7b2d18;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    margin-bottom: 35px;
+    color: #666;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.food-card {
+    background-color: white;
+    width: 240px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    padding-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-8px);
+}
+
+.food-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.food-card h3 {
+    margin: 15px 0 10px;
+    color: #542719;
+}
+
+.food-card p {
+    padding: 0 12px;
+    color: #666;
+    font-size: 14px;
+}
+
+.food-card h4 {
+    color: #e67e00;
+    margin-top: 12px;
+    font-size: 20px;
+}
+
+/* Offers Section */
+.offers {
+    background-color: #fff0d9;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.offer-box {
+    background-color: #7b2d18;
+    color: white;
+    max-width: 600px;
+    margin: 20px auto 0;
+    padding: 35px;
+    border-radius: 12px;
+}
+
+.offer-box h3 {
+    color: #ffbd59;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.offer-box p {
+    margin: 10px;
+}
+
+/* Reviews Section */
+.reviews {
+    padding: 60px 7%;
+    text-align: center;
+}
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.review-card {
+    background-color: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.review-card h3 {
+    color: #7b2d18;
+    margin-bottom: 15px;
+}
+
+.review-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #35180f;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact h2 {
+    color: #ffbd59;
+}
+
+.contact p {
+    margin: 12px;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background-color: #21100a;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        height: 400px;
+        padding: 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 30px;
+    }
+
+    .menu-container,
+    .review-container {
+        align-items: center;
+    }
+
+    .food-card,
+    .review-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
